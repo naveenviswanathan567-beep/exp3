@@ -1,7 +1,7 @@
 ### Aim
 To write a Python program using OpenCV to perform histogram equalization on both grayscale and color images to enhance image contrast and brightness.
 
-==> The program performs the following operations:
+### The program performs the following operations:
 
 Read and display a grayscale image Plot histogram of the grayscale image Apply histogram equalization on grayscale image Read and display a color image Plot histogram of B, G, R channels Convert image to HSV color space Apply histogram equalization on the Value (V) channel Convert the enhanced image back to BGR format Display original and enhanced images with histograms
 
@@ -80,9 +80,9 @@ plt.subplot(121); plt.hist(img.ravel(),256,range = [0, 256]); plt.title('Origina
 plt.subplot(122); plt.hist(img_eq.ravel(),256,range = [0, 256]); plt.title('Histogram Equalized')
 ```
 ### Output
-==> Grayscale Histogram Equalization Original grayscale image is displayed Histogram of original grayscale image is plotted Enhanced image after histogram equalization is displayed Histogram of enhanced grayscale image shows improved contrast
+- Grayscale Histogram Equalization Original grayscale image is displayed Histogram of original grayscale image is plotted Enhanced image after histogram equalization is displayed Histogram of enhanced grayscale image shows improved contrast
 
-==> Color Image Histogram Equalization Original color image is displayed Histogram of B, G, R channels is plotted Enhanced image after HSV-based equalization is displayed Histogram of enhanced image shows better intensity distribution
+- Color Image Histogram Equalization Original color image is displayed Histogram of B, G, R channels is plotted Enhanced image after HSV-based equalization is displayed Histogram of enhanced image shows better intensity distribution
 
 ### Result
 Thus, histogram equalization is successfully performed on both grayscale and color images using OpenCV. The contrast and brightness of the images are significantly improved, enhancing visual quality and feature visibility.
